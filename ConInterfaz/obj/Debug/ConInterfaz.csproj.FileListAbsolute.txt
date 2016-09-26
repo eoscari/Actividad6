@@ -1,0 +1,11 @@
+C:\Users\oscar\Documents\SharpDevelop Projects\ConInterfaz\ConInterfaz\bin\Debug\ConInterfaz.exe.config
+C:\Users\oscar\Documents\SharpDevelop Projects\ConInterfaz\ConInterfaz\bin\Debug\ConInterfaz.exe
+C:\Users\oscar\Documents\SharpDevelop Projects\ConInterfaz\ConInterfaz\bin\Debug\ConInterfaz.pdb
+C:\Users\oscar\Documents\SharpDevelop Projects\ConInterfaz\ConInterfaz\obj\Debug\ConInterfaz.csprojResolveAssemblyReference.cache
+C:\Users\oscar\Documents\SharpDevelop Projects\ConInterfaz\ConInterfaz\obj\Debug\ConInterfaz.frmAltas.resources
+C:\Users\oscar\Documents\SharpDevelop Projects\ConInterfaz\ConInterfaz\obj\Debug\ConInterfaz.frmBajas.resources
+C:\Users\oscar\Documents\SharpDevelop Projects\ConInterfaz\ConInterfaz\obj\Debug\ConInterfaz.MainForm.resources
+C:\Users\oscar\Documents\SharpDevelop Projects\ConInterfaz\ConInterfaz\obj\Debug\ConInterfaz.csproj.GenerateResource.Cache
+C:\Users\oscar\Documents\SharpDevelop Projects\ConInterfaz\ConInterfaz\obj\Debug\ConInterfaz.exe
+C:\Users\oscar\Documents\SharpDevelop Projects\ConInterfaz\ConInterfaz\obj\Debug\ConInterfaz.pdb
+C:\Users\oscar\Documents\SharpDevelop Projects\ConInterfaz\ConInterfaz\obj\Debug\ConInterfaz.frmModifica.resources
