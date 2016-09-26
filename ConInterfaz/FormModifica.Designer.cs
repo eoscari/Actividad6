@@ -19,11 +19,11 @@ namespace ConInterfaz
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.Label dni;
 		private System.Windows.Forms.Label label2;
-		private System.Windows.Forms.TextBox textNombre;
-		private System.Windows.Forms.TextBox textApellido;
-		private System.Windows.Forms.TextBox textDomicilio;
-		private System.Windows.Forms.TextBox textPrestamo;
-		private System.Windows.Forms.TextBox textDni;
+		private System.Windows.Forms.TextBox txtNombre;
+		private System.Windows.Forms.TextBox txtApellido;
+		private System.Windows.Forms.TextBox txtDomicilio;
+		private System.Windows.Forms.TextBox txtPrestamo;
+		private System.Windows.Forms.TextBox txtDni;
 		private System.Windows.Forms.Button btnGuardar;
 		private System.Windows.Forms.Button btnLimpiar;
 		private System.Windows.Forms.Button btnSalir;
@@ -54,11 +54,11 @@ namespace ConInterfaz
 			this.label1 = new System.Windows.Forms.Label();
 			this.dni = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
-			this.textNombre = new System.Windows.Forms.TextBox();
-			this.textApellido = new System.Windows.Forms.TextBox();
-			this.textDomicilio = new System.Windows.Forms.TextBox();
-			this.textPrestamo = new System.Windows.Forms.TextBox();
-			this.textDni = new System.Windows.Forms.TextBox();
+			this.txtNombre = new System.Windows.Forms.TextBox();
+			this.txtApellido = new System.Windows.Forms.TextBox();
+			this.txtDomicilio = new System.Windows.Forms.TextBox();
+			this.txtPrestamo = new System.Windows.Forms.TextBox();
+			this.txtDni = new System.Windows.Forms.TextBox();
 			this.btnGuardar = new System.Windows.Forms.Button();
 			this.btnLimpiar = new System.Windows.Forms.Button();
 			this.btnSalir = new System.Windows.Forms.Button();
@@ -104,40 +104,41 @@ namespace ConInterfaz
 			this.label2.TabIndex = 0;
 			this.label2.Text = "Préstamo: ";
 			// 
-			// textNombre
+			// txtNombre
 			// 
-			this.textNombre.Location = new System.Drawing.Point(64, 13);
-			this.textNombre.Name = "textNombre";
-			this.textNombre.Size = new System.Drawing.Size(119, 20);
-			this.textNombre.TabIndex = 0;
+			this.txtNombre.Location = new System.Drawing.Point(64, 13);
+			this.txtNombre.Name = "txtNombre";
+			this.txtNombre.Size = new System.Drawing.Size(119, 20);
+			this.txtNombre.TabIndex = 0;
 			// 
-			// textApellido
+			// txtApellido
 			// 
-			this.textApellido.Location = new System.Drawing.Point(64, 42);
-			this.textApellido.Name = "textApellido";
-			this.textApellido.Size = new System.Drawing.Size(119, 20);
-			this.textApellido.TabIndex = 1;
+			this.txtApellido.Location = new System.Drawing.Point(64, 42);
+			this.txtApellido.Name = "txtApellido";
+			this.txtApellido.Size = new System.Drawing.Size(119, 20);
+			this.txtApellido.TabIndex = 1;
 			// 
-			// textDomicilio
+			// txtDomicilio
 			// 
-			this.textDomicilio.Location = new System.Drawing.Point(64, 78);
-			this.textDomicilio.Name = "textDomicilio";
-			this.textDomicilio.Size = new System.Drawing.Size(119, 20);
-			this.textDomicilio.TabIndex = 2;
+			this.txtDomicilio.Location = new System.Drawing.Point(64, 78);
+			this.txtDomicilio.Name = "txtDomicilio";
+			this.txtDomicilio.Size = new System.Drawing.Size(119, 20);
+			this.txtDomicilio.TabIndex = 2;
 			// 
-			// textPrestamo
+			// txtPrestamo
 			// 
-			this.textPrestamo.Location = new System.Drawing.Point(64, 142);
-			this.textPrestamo.Name = "textPrestamo";
-			this.textPrestamo.Size = new System.Drawing.Size(119, 20);
-			this.textPrestamo.TabIndex = 4;
+			this.txtPrestamo.Location = new System.Drawing.Point(64, 142);
+			this.txtPrestamo.Name = "txtPrestamo";
+			this.txtPrestamo.Size = new System.Drawing.Size(119, 20);
+			this.txtPrestamo.TabIndex = 4;
+			this.txtPrestamo.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtPrestamoKeyUp);
 			// 
-			// textDni
+			// txtDni
 			// 
-			this.textDni.Location = new System.Drawing.Point(64, 110);
-			this.textDni.Name = "textDni";
-			this.textDni.Size = new System.Drawing.Size(119, 20);
-			this.textDni.TabIndex = 3;
+			this.txtDni.Location = new System.Drawing.Point(64, 110);
+			this.txtDni.Name = "txtDni";
+			this.txtDni.Size = new System.Drawing.Size(119, 20);
+			this.txtDni.TabIndex = 3;
 			// 
 			// btnGuardar
 			// 
@@ -147,6 +148,7 @@ namespace ConInterfaz
 			this.btnGuardar.TabIndex = 5;
 			this.btnGuardar.Text = "Guardar";
 			this.btnGuardar.UseVisualStyleBackColor = true;
+			this.btnGuardar.Click += new System.EventHandler(this.BtnGuardarClick);
 			// 
 			// btnLimpiar
 			// 
@@ -156,6 +158,7 @@ namespace ConInterfaz
 			this.btnLimpiar.TabIndex = 6;
 			this.btnLimpiar.Text = "Limpiar";
 			this.btnLimpiar.UseVisualStyleBackColor = true;
+			this.btnLimpiar.Click += new System.EventHandler(this.BtnLimpiarClick);
 			// 
 			// btnSalir
 			// 
@@ -171,14 +174,14 @@ namespace ConInterfaz
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(284, 261);
-			this.Controls.Add(this.textNombre);
+			this.Controls.Add(this.txtNombre);
 			this.Controls.Add(this.btnSalir);
 			this.Controls.Add(this.btnLimpiar);
 			this.Controls.Add(this.btnGuardar);
-			this.Controls.Add(this.textDni);
-			this.Controls.Add(this.textPrestamo);
-			this.Controls.Add(this.textDomicilio);
-			this.Controls.Add(this.textApellido);
+			this.Controls.Add(this.txtDni);
+			this.Controls.Add(this.txtPrestamo);
+			this.Controls.Add(this.txtDomicilio);
+			this.Controls.Add(this.txtApellido);
 			this.Controls.Add(this.label2);
 			this.Controls.Add(this.dni);
 			this.Controls.Add(this.label1);
@@ -186,7 +189,6 @@ namespace ConInterfaz
 			this.Controls.Add(this.nombre);
 			this.Name = "frmModifica";
 			this.Text = "Modificar datos";
-			this.Load += new System.EventHandler(this.FrmModificaLoad);
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
